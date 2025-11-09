@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Usuário: Foco na Experiência do Desenvolvedor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFFFFF;
+            color: #1D3557;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #FFFFFF;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            align-items: center;
+            padding: 60px;
+            gap: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .accent-block-right {
+            position: absolute;
+            width: 350px;
+            height: 350px;
+            background-color: #E63946;
+            opacity: 0.12;
+            right: -80px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .content {
+            grid-column: 1 / 2;
+            z-index: 2;
+        }
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            color: #E63946;
+            line-height: 1.3;
+            margin-bottom: 45px;
+            letter-spacing: -0.5px;
+        }
+        
+        .test-section {
+            margin-bottom: 35px;
+        }
+        
+        .section-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #457B9D;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        
+        .section-content {
+            font-size: 16px;
+            font-weight: 400;
+            color: #1D3557;
+            line-height: 1.7;
+        }
+        
+        .highlight {
+            font-weight: 600;
+            color: #1D3557;
+        }
+        
+        .accent-text {
+            color: #457B9D;
+            font-weight: 600;
+        }
+        
+        .feedback-item {
+            margin-top: 8px;
+            padding-left: 16px;
+            border-left: 3px solid #457B9D;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="accent-block-right"></div>
+        
+        <div class="content">
+            <h1>Teste de Usuário: Foco na Experiência do Desenvolvedor</h1>
+            
+            <div class="test-section">
+                <div class="section-title">Definição</div>
+                <div class="section-content">Avaliação da API por um <span class="highlight">"usuário"</span> (o desenvolvedor cliente) que integrará a funcionalidade no seu aplicativo.</div>
+            </div>
+            
+            <div class="test-section">
+                <div class="section-title">Cenário Testado</div>
+                <div class="section-content">Criação de Tarefa com dados <span class="accent-text">válidos</span> e tratamento de erros de <span class="accent-text">validação</span>.</div>
+            </div>
+            
+            <div class="test-section">
+                <div class="section-title">Foco na Usabilidade</div>
+                <div class="section-content">Clareza das respostas HTTP (201, 422) e utilidade das mensagens de erro para o cliente integrador.</div>
+            </div>
+            
+            <div class="test-section">
+                <div class="section-title">Questões Avaliadas</div>
+                <div class="feedback-item">A API é intuitiva e fácil de usar?</div>
+                <div class="feedback-item">As mensagens de erro são claras e úteis?</div>
+                <div class="feedback-item">O fluxo de autenticação é bem documentado?</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

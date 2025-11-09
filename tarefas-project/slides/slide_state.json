@@ -1,0 +1,92 @@
+{
+  "project_info": {
+    "title": "Qualidade de Software: Testes em Aplicações Laravel",
+    "created": 1762727128.5801194,
+    "last_updated": 1762727197.7717776,
+    "total_slides": 10
+  },
+  "slides": {
+    "title_slide": "edited",
+    "intro_objetivo": "edited",
+    "arquitetura_sistema": "edited",
+    "testes_unitarios": "edited",
+    "testes_integracao": "edited",
+    "teste_sistema": "edited",
+    "teste_usuario": "edited",
+    "repositorio_github": "edited",
+    "conclusao": "edited",
+    "perguntas": "edited"
+  },
+  "outline": [
+    {
+      "id": "title_slide",
+      "title": "Qualidade de Software: Testes em Aplicações Laravel",
+      "summary": "Apresentação de um projeto completo de testes em Laravel, incluindo testes unitários, de integração, de sistema e de usuário, utilizando PHPUnit como framework de teste.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "intro_objetivo",
+      "title": "O Desafio da Qualidade e o Foco do Trabalho",
+      "summary": "Apresentação do objetivo principal do trabalho: exercitar boas práticas de teste em um sistema Web desenvolvido com Laravel, com foco na implementação de diferentes níveis de teste.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "arquitetura_sistema",
+      "title": "Visão Geral da API de Tarefas",
+      "summary": "Descrição da arquitetura do sistema base, incluindo o recurso Tarefa, funcionalidades implementadas (CRUD), autenticação com Laravel Sanctum e proteção de rotas.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "testes_unitarios",
+      "title": "Testes Unitários: Garantindo a Lógica de Negócio",
+      "summary": "Explicação dos 6 testes unitários implementados para as Models User e Tarefa, focando no isolamento e validação da lógica de negócio.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "testes_integracao",
+      "title": "Testes de Integração: Validando a Comunicação entre Componentes",
+      "summary": "Apresentação dos 6 testes de integração que validam a interação entre Controllers, Rotas e Autenticação, incluindo testes de sucesso e falha esperada.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "teste_sistema",
+      "title": "Teste de Sistema: Simulação do Fluxo de Usuário Final",
+      "summary": "Documentação do teste de sistema end-to-end que simula o fluxo completo de autenticação e criação de tarefa, com validação de respostas HTTP.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "teste_usuario",
+      "title": "Teste de Usuário: Foco na Experiência do Desenvolvedor",
+      "summary": "Avaliação da API pela perspectiva do desenvolvedor cliente, incluindo testes de usabilidade, clareza de respostas e utilidade das mensagens de erro.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "repositorio_github",
+      "title": "Entrega e Repositório do Projeto",
+      "summary": "Informações sobre o repositório GitHub público, documentação em README.md e estrutura dos testes implementados.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "conclusao",
+      "title": "Conclusão e Lições Aprendidas",
+      "summary": "Síntese das lições aprendidas durante o desenvolvimento do projeto, incluindo a importância do RefreshDatabase e Factory para testes isolados.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "perguntas",
+      "title": "Perguntas e Respostas",
+      "summary": "Slide final aberto para perguntas e discussão sobre o projeto e os testes implementados.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    }
+  ]
+}

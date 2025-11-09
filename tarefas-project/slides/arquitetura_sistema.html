@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visão Geral da API de Tarefas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFFFFF;
+            color: #1D3557;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            padding: 60px 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .accent-block-top {
+            position: absolute;
+            width: 200px;
+            height: 8px;
+            background-color: #E63946;
+            top: 0;
+            right: 80px;
+        }
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            color: #E63946;
+            line-height: 1.3;
+            margin-bottom: 50px;
+            letter-spacing: -0.5px;
+        }
+        
+        .architecture-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px 60px;
+            max-width: 1100px;
+        }
+        
+        .architecture-item {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .item-label {
+            font-size: 14px;
+            font-weight: 700;
+            color: #457B9D;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .item-content {
+            font-size: 16px;
+            font-weight: 400;
+            color: #1D3557;
+            line-height: 1.6;
+        }
+        
+        .item-highlight {
+            font-weight: 600;
+            color: #1D3557;
+        }
+        
+        .accent-block-bottom {
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            background-color: #457B9D;
+            opacity: 0.08;
+            bottom: -50px;
+            left: -50px;
+            border-radius: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="accent-block-top"></div>
+        <div class="accent-block-bottom"></div>
+        
+        <h1>Visão Geral da API de Tarefas</h1>
+        
+        <div class="architecture-grid">
+            <div class="architecture-item">
+                <div class="item-label">Recurso Principal</div>
+                <div class="item-content"><span class="item-highlight">Tarefa</span> (Model, Migration, Controller)</div>
+            </div>
+            
+            <div class="architecture-item">
+                <div class="item-label">Funcionalidades</div>
+                <div class="item-content">Listagem (<span class="item-highlight">GET /api/tarefas</span>) e Criação (<span class="item-highlight">POST /api/tarefas</span>)</div>
+            </div>
+            
+            <div class="architecture-item">
+                <div class="item-label">Autenticação</div>
+                <div class="item-content">Implementada com <span class="item-highlight">Laravel Sanctum</span> (Tokens de API)</div>
+            </div>
+            
+            <div class="architecture-item">
+                <div class="item-label">Rotas de Login</div>
+                <div class="item-content"><span class="item-highlight">POST /api/login</span> para geração do token</div>
+            </div>
+            
+            <div class="architecture-item">
+                <div class="item-label">Proteção de Rotas</div>
+                <div class="item-content">Middleware <span class="item-highlight">auth:sanctum</span> para proteger o recurso tarefas</div>
+            </div>
+            
+            <div class="architecture-item">
+                <div class="item-label">Banco de Dados</div>
+                <div class="item-content"><span class="item-highlight">SQLite</span> para desenvolvimento e testes</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

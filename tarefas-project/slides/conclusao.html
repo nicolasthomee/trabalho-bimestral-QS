@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conclusão e Lições Aprendidas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFFFFF;
+            color: #1D3557;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #FFFFFF;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            padding: 60px;
+            gap: 60px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .accent-line-left {
+            position: absolute;
+            width: 8px;
+            height: 250px;
+            background-color: #E63946;
+            left: 0;
+            top: 100px;
+        }
+        
+        .accent-block-bottom {
+            position: absolute;
+            width: 320px;
+            height: 320px;
+            background-color: #457B9D;
+            opacity: 0.08;
+            bottom: -80px;
+            left: -80px;
+            border-radius: 0;
+        }
+        
+        .content-left {
+            grid-column: 1 / 2;
+            padding-left: 30px;
+            z-index: 2;
+        }
+        
+        .content-right {
+            grid-column: 2 / 3;
+            z-index: 2;
+        }
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            color: #E63946;
+            line-height: 1.3;
+            margin-bottom: 40px;
+            letter-spacing: -0.5px;
+        }
+        
+        .section-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #457B9D;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+            margin-top: 24px;
+        }
+        
+        .section-title:first-child {
+            margin-top: 0;
+        }
+        
+        .section-content {
+            font-size: 15px;
+            font-weight: 400;
+            color: #1D3557;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+        
+        .lesson-item {
+            font-size: 15px;
+            font-weight: 400;
+            color: #1D3557;
+            line-height: 1.7;
+            margin-bottom: 16px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .lesson-item::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #E63946;
+            font-weight: 700;
+        }
+        
+        .highlight {
+            font-weight: 600;
+            color: #1D3557;
+        }
+        
+        .accent-text {
+            color: #457B9D;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="accent-line-left"></div>
+        <div class="accent-block-bottom"></div>
+        
+        <div class="content-left">
+            <h1>Conclusão e Lições Aprendidas</h1>
+            
+            <div class="section-title">Conclusão Principal</div>
+            <div class="section-content">
+                O projeto demonstrou a aplicação prática de <span class="highlight">diferentes níveis de teste</span> em uma aplicação Laravel, desde testes unitários isolados até testes de sistema end-to-end.
+            </div>
+            
+            <div class="section-title">Importância dos Testes</div>
+            <div class="section-content">
+                A implementação de <span class="accent-text">6 testes unitários</span> e <span class="accent-text">6 testes de integração</span> garantiu a qualidade e confiabilidade do código, permitindo refatorações seguras e detecção precoce de bugs.
+            </div>
+        </div>
+        
+        <div class="content-right">
+            <div class="section-title">Lições Aprendidas</div>
+            
+            <div class="lesson-item">
+                <span class="highlight">RefreshDatabase:</span> Essencial para isolar testes e garantir um estado limpo do banco de dados entre execuções.
+            </div>
+            
+            <div class="lesson-item">
+                <span class="highlight">Factory Pattern:</span> Facilita a criação de dados de teste consistentes e reutilizáveis.
+            </div>
+            
+            <div class="lesson-item">
+                <span class="highlight">Sanctum Authentication:</span> Implementação segura e prática de autenticação em APIs Laravel.
+            </div>
+            
+            <div class="lesson-item">
+                <span class="highlight">Test Organization:</span> Separação clara entre testes unitários e de integração melhora a manutenção.
+            </div>
+            
+            <div class="section-title">Próximos Passos</div>
+            
+            <div class="lesson-item">
+                Implementar os métodos <span class="accent-text">show</span>, <span class="accent-text">update</span> e <span class="accent-text">destroy</span> para CRUD completo.
+            </div>
+            
+            <div class="lesson-item">
+                Adicionar mais testes de validação e casos extremos (edge cases).
+            </div>
+        </div>
+    </div>
+</body>
+</html>

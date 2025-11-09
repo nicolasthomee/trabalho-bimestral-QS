@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes Unitários: Garantindo a Lógica de Negócio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFFFFF;
+            color: #1D3557;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            padding: 60px 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .accent-block-right {
+            position: absolute;
+            width: 150px;
+            height: 600px;
+            background-color: #E63946;
+            right: 0;
+            top: 60px;
+            opacity: 0.08;
+        }
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            color: #E63946;
+            line-height: 1.3;
+            margin-bottom: 45px;
+            letter-spacing: -0.5px;
+        }
+        
+        .tests-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+            max-width: 1100px;
+        }
+        
+        .test-card {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .test-model {
+            font-size: 12px;
+            font-weight: 700;
+            color: #457B9D;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .test-number {
+            font-size: 24px;
+            font-weight: 700;
+            color: #E63946;
+        }
+        
+        .test-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: #1D3557;
+            line-height: 1.4;
+        }
+        
+        .test-description {
+            font-size: 14px;
+            font-weight: 400;
+            color: #1D3557;
+            line-height: 1.5;
+            opacity: 0.85;
+        }
+        
+        .test-focus {
+            font-size: 13px;
+            font-weight: 500;
+            color: #457B9D;
+            margin-top: 8px;
+        }
+        
+        .focus-label {
+            font-weight: 600;
+        }
+        
+        .summary-box {
+            position: absolute;
+            bottom: 60px;
+            left: 80px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #1D3557;
+        }
+        
+        .summary-number {
+            color: #E63946;
+            font-size: 20px;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="accent-block-right"></div>
+        
+        <h1>Testes Unitários: Garantindo a Lógica de Negócio</h1>
+        
+        <div class="tests-grid">
+            <!-- Tarefa Tests -->
+            <div class="test-card">
+                <div class="test-model">Model: Tarefa</div>
+                <div class="test-number">1</div>
+                <div class="test-title">Tarefa Pertence a Usuário</div>
+                <div class="test-description">Valida o relacionamento entre Tarefa e User</div>
+                <div class="test-focus"><span class="focus-label">Foco:</span> Relacionamento BelongsTo</div>
+            </div>
+            
+            <div class="test-card">
+                <div class="test-model">Model: Tarefa</div>
+                <div class="test-number">2</div>
+                <div class="test-title">Criação de Tarefa</div>
+                <div class="test-description">Testa a criação com sucesso no banco de dados</div>
+                <div class="test-focus"><span class="focus-label">Foco:</span> Persistência de dados</div>
+            </div>
+            
+            <div class="test-card">
+                <div class="test-model">Model: Tarefa</div>
+                <div class="test-number">3</div>
+                <div class="test-title">Atualização de Tarefa</div>
+                <div class="test-description">Valida a modificação de campos da tarefa</div>
+                <div class="test-focus"><span class="focus-label">Foco:</span> Integridade de dados</div>
+            </div>
+            
+            <!-- User Tests -->
+            <div class="test-card">
+                <div class="test-model">Model: User</div>
+                <div class="test-number">4</div>
+                <div class="test-title">Usuário com Múltiplas Tarefas</div>
+                <div class="test-description">Valida o relacionamento HasMany com tarefas</div>
+                <div class="test-focus"><span class="focus-label">Foco:</span> Relacionamento HasMany</div>
+            </div>
+            
+            <div class="test-card">
+                <div class="test-model">Model: User</div>
+                <div class="test-number">5</div>
+                <div class="test-title">Deleção em Cascata</div>
+                <div class="test-description">Testa a remoção de usuário e suas tarefas</div>
+                <div class="test-focus"><span class="focus-label">Foco:</span> Integridade referencial</div>
+            </div>
+            
+            <div class="test-card">
+                <div class="test-model">Model: User</div>
+                <div class="test-number">6</div>
+                <div class="test-title">Atualização de Usuário</div>
+                <div class="test-description">Valida a modificação de dados do usuário</div>
+                <div class="test-focus"><span class="focus-label">Foco:</span> Persistência de dados</div>
+            </div>
+        </div>
+        
+        <div class="summary-box">
+            Total de Testes Unitários: <span class="summary-number">6</span>
+        </div>
+    </div>
+</body>
+</html>
